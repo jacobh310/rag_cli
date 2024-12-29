@@ -1,2 +1,2 @@
-# rag_cli
+# RAG CLI
 RAG Command Line Interface Applicatoin
