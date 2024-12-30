@@ -1,0 +1,1 @@
+"""Initilization for RAG CLI"""

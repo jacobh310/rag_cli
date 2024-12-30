@@ -1,0 +1,21 @@
+
+ROLE: "SageMakerExecutionRag"
+INDEX_NAME:  'llama-2-fin-rag-proto'
+EMB_MODEL_NAME : 'Mini-LM-Model'
+EMB_INSTNACE_TYPE : "ml.t2.large"
+EMB_INITIAL_INSTANCE_COUNT : 1
+EMB_HEALTH_CHECK_TIMEOUT : 600
+EMB_ENDPOINT_NAME : "Mini-LM-Model-endpoint"
+EMB_MODEL_ID : "sentence-transformers/all-MiniLM-L6-v2"
+
+LLM_INSTNACE_TYPE : "ml.g5.2xlarge"
+LLM_INITIAL_INSTANCE_COUNT : 1
+LLM_NUMBER_OF_GPUS  : 1
+LLM_HEALTH_CHECK_TIMEOUT : 600 # 10 minutes to be able to load the model
+LLM_ENDPOINT_NAME : "llama-2-endpoint"
+LLM_MODEL_NAME : 'llama-2-model'
+LLM_MODEL_ID : "meta-llama/Llama-2-7b-chat-hf"
+LLL_MAX_INPUT_LENGTH: 2048
+LLM_MAX_TOTAL_TOKENS: 4096
+LLM_MAX_BATCH_TOTAL_TOKENS: 8192
+
